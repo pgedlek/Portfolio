@@ -1,11 +1,12 @@
-import './App.css'
+import * as React from 'react';
+import Button from '@mui/material/Button';
 
-function App() {
+const App: React.FC = () => {  // Explicitly type your component
   return (
-    <>
-      <p>Portfolio</p>
-    </>
-  )
-}
+    <Button variant="contained" color="primary">
+      Hello World
+    </Button>
+  );
+};
 
-export default App
+export default App;
